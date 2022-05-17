@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Test_Vykydal_Jakub
 {
-    class Nakladak
+    public class Nakladak
     {
         
         
