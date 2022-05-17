@@ -28,7 +28,7 @@ namespace Test_Vykydal_Jakub
 
         private void Nalozit_Click(object sender, RoutedEventArgs e)
         {
-            int naklad = +1000;
+            int naklad =+ 1000;
             if (maxNosnost == 3000)
             {
                 naklad =+0;

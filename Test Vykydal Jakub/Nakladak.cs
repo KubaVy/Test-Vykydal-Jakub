@@ -22,22 +22,7 @@ namespace Test_Vykydal_Jakub
             int spotreba = 50;
             int naklad = 0;
         }
-        public void Nalozit()
-        {
-            int naklad =+ 1000;
-            if (maxNosnost == 3000)
-            {
-                naklad =+ 0;
-            }
-        }
-        public void Vylozit()
-        {
-            int naklad =- 1000;
-            if(naklad == 0)
-            {
-                naklad =- 0;
-            }
-        }
+        
     
     }
 }
