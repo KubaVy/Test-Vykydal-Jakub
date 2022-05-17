@@ -25,5 +25,34 @@ namespace Test_Vykydal_Jakub
             InitializeComponent();
 
         }
+
+        private void Nalozit_Click(object sender, RoutedEventArgs e)
+        {
+            int naklad = +1000;
+            if (maxNosnost == 3000)
+            {
+                naklad =+0;
+            }
+           
+        }
+
+        private void Vylozit_Click(object sender, RoutedEventArgs e)
+        {
+            int naklad = -1000;
+            if (naklad == 0)
+            {
+                naklad =-0;
+            }
+        }
+
+        private void Jet_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tankovat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
