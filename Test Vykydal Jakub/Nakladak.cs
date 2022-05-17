@@ -30,7 +30,14 @@ namespace Test_Vykydal_Jakub
                 naklad =+ 0;
             }
         }
-    
+        public void Vylozit()
+        {
+            int naklad =- 1000;
+            if(naklad == 0)
+            {
+                naklad =-0;
+            }
+        }
     
     }
 }
