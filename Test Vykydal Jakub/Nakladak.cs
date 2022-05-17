@@ -35,7 +35,7 @@ namespace Test_Vykydal_Jakub
             int naklad =- 1000;
             if(naklad == 0)
             {
-                naklad =-0;
+                naklad =- 0;
             }
         }
     
