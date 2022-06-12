@@ -20,39 +20,65 @@ namespace Test_Vykydal_Jakub
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Nakladak auto1;
+        public int Naklad;
+
+        public int MaxNosnost { get; }
+
+        public MainWindow(int maxNosnost)
+        {
+            MaxNosnost=maxNosnost;
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            auto1 = new Nakladak();
+            ShowVehicle(auto1, txt1);
+        }
+        
 
+        public void ShowVehicle(Nakladak auto1, TextBox txt1)
+        {
+            txt1.Text = $"maxnaklad: {auto1.MaxNosnost}\n";
+            txt1.Text += $"naklad: {auto1.Naklad}\n";
+            txt1.Text += $"maxpalivo: {auto1.MaxPalivo}\n";
+            txt1.Text += $"palivo: {auto1.Palivo}\n";
+            txt1.Text += $"vzdalenost: {auto1.Vzdalenost}\n";
+            txt1.Text += $"spotreba: {auto1.Spotreba}\n";
         }
 
         private void Nalozit_Click(object sender, RoutedEventArgs e)
         {
-            int naklad =+ 1000;
-            if (maxNosnost == 3000)
-            {
-                naklad =+0;
-            }
-           
+            auto1.Nalozit();
+            ShowVehicle(auto1, txt1);
+            
         }
+
+
 
         private void Vylozit_Click(object sender, RoutedEventArgs e)
         {
-            int naklad = -1000;
-            if (naklad == 0)
-            {
-                naklad =-0;
-            }
+            auto1.Vylozit();
+            ShowVehicle(auto1, txt1);
+            
         }
 
         private void Jet_Click(object sender, RoutedEventArgs e)
         {
-
+            auto1.Jizda();
+            auto1.SpoTreba();
+            ShowVehicle(auto1, txt1);
+            
         }
 
         private void Tankovat_Click(object sender, RoutedEventArgs e)
         {
-
+            auto1.Natankovat();
+            ShowVehicle(auto1, txt1);
+            
         }
+
     }
-}
+}    
+
