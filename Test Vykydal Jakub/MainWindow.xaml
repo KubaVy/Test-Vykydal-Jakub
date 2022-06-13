@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="465" Width="806">
     <Grid Margin="0,0,0,-6">
-        <Button Name="Nalozit" Content="Nalozit" Margin="33,371,643,0" Click="Nalozit_Click" VerticalAlignment="Top" Height="53"/>
+        <Button Name="Nalozit" Content="Nalozit" Margin="33,371,698,0" Click="Nalozit_Click" VerticalAlignment="Top" Height="53"/>
         <TextBox Name ="txt1" HorizontalAlignment="Left" Margin="10,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Height="228"/>
-        <Button Name="Vylozit" Content="Vylozit" HorizontalAlignment="Left" Margin="219,371,0,0" VerticalAlignment="Top" Height="53" Width="122" Click="Vylozit_Click"/>
-        <Button Name="Jet" Content="Jet" HorizontalAlignment="Left" Margin="460,371,0,0" VerticalAlignment="Top" Height="53" Width="121" Click="Jet_Click"/>
-        <Button Name="Tankovat" Content="Tankovat" HorizontalAlignment="Left" Margin="687,371,0,0" VerticalAlignment="Top" Height="53" Width="103" Click="Tankovat_Click"/>
+        <Button Name="Vylozit" Content="Vylozit" HorizontalAlignment="Left" Margin="129,371,0,0" VerticalAlignment="Top" Height="53" Width="64" Click="Vylozit_Click"/>
+        <Button Name="Jet" Content="Jet" HorizontalAlignment="Left" Margin="33,301,0,0" VerticalAlignment="Top" Height="50" Width="75" Click="Jet_Click"/>
+        <Button Name="Tankovat" Content="Tankovat" HorizontalAlignment="Left" Margin="129,301,0,0" VerticalAlignment="Top" Height="50" Width="64" Click="Tankovat_Click"/>
         <TextBox Name="txt2" HorizontalAlignment="Left" Margin="520,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="228"/>
+        <Button Name="Jet2" Content="Jet" HorizontalAlignment="Left" Margin="622,301,0,0" VerticalAlignment="Top" Height="50" Width="65" Click="Jet2_Click"/>
+        <Button Name="Tankovat2" Content="Tankovat" HorizontalAlignment="Left" Margin="715,301,0,0" VerticalAlignment="Top" Height="50" Width="65" Click="Tankovat2_Click"/>
+        <Button Name="Nalozit2" Content="Nalozit" HorizontalAlignment="Left" Margin="622,371,0,0" VerticalAlignment="Top" Height="53" Width="65" Click="Nalozit2_Click"/>
+        <Button Name="Vylozit2" Content="Vylozit" HorizontalAlignment="Left" Margin="715,371,0,0" VerticalAlignment="Top" Height="53" Width="65" Click="Vylozit2_Click"/>
 
 
     </Grid>
